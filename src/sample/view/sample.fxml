@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #42a5f5;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.Controller">
+   <children>
+      <ImageView fx:id="imaveView" fitHeight="150.0" fitWidth="149.0" layoutX="251.0" layoutY="67.0" pickOnBounds="true" preserveRatio="true">
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+      <JFXButton fx:id="uploadButton" alignment="CENTER" buttonType="RAISED" layoutX="209.0" layoutY="232.0" prefHeight="25.0" prefWidth="182.0" style="-fx-background-color: #80d6ff;" text="Upload" />
+      <JFXButton fx:id="saveButton" layoutX="118.0" layoutY="333.0" prefHeight="40.0" prefWidth="208.0" style="-fx-background-color: #FFFF; -fx-background-radius: 25;" text="SAVE / UPDATE" />
+      <JFXTextField fx:id="nameTextField" alignment="CENTER" focusColor="#e7ebf8" layoutX="74.0" layoutY="269.0" prefHeight="40.0" prefWidth="286.0" promptText="Name" style="-fx-background-color: #FFFF; -fx-background-radius: 25;">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="10.0" layoutY="14.0" prefHeight="35.0" prefWidth="600.0" style="-fx-background-color: #0077c2; -fx-background-radius: 220;" text="Image Upload System" textAlignment="CENTER" textFill="WHITE" textOverrun="CLIP" underline="true">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <JFXComboBox fx:id="genderList" focusColor="WHITE" layoutX="376.0" layoutY="269.0" prefHeight="40.0" prefWidth="149.0" promptText="Select Gender" style="-fx-background-color: #FFFF; -fx-background-radius: 20; -fx-padding: 8;" visibleRowCount="5" />
+      <JFXButton fx:id="openImage" layoutX="354.0" layoutY="333.0" prefHeight="40.0" prefWidth="193.0" style="-fx-background-color: #FFFF; -fx-background-radius: 25;" text="Open User Image" />
+   </children>
+</AnchorPane>
